@@ -4,9 +4,9 @@ import streamlit as st
 from google_auth_oauthlib.flow import Flow
 import os
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+REDIRECT_URI = "https://hdl-chatbot-bhasphanikarindra3.streamlit.app/"# this is used by me for deploying
 
-
-REDIRECT_URI = "http://localhost:8501/"
+#REDIRECT_URI = "http://localhost:8501/"# this is for the local machine
 
 def google_login():
     client_id = os.getenv("GOOGLE_CLIENT_ID")
