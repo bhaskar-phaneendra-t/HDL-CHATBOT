@@ -23,7 +23,7 @@ An AI-powered HDL (Hardware Description Language) chatbot built using Retrieval-
 
 ---
 
-## ✨ Features
+##  Features
 
 -  Google Login Authentication
 -  Multi-chat support
@@ -37,7 +37,7 @@ An AI-powered HDL (Hardware Description Language) chatbot built using Retrieval-
 
 ---
 
-## 🏗 Architecture Overview
+##  Architecture Overview
 ```markdowm
 User
 ↓
@@ -55,3 +55,54 @@ RAG Pipeline
 AI Response
 
 ```
+
+## Local Setup Guide
+---
+### Step 1
+##  Project Structure
+```markdown
+hdl-chatbot/
+│
+├── app.py                     # Streamlit entry point
+│
+├── auth/
+│   ├── google_auth.py
+│   └── session.py
+│
+├── rag/
+│   ├── ingest.py              # PDF → embeddings (one-time)
+│   ├── embeddings.py
+│   ├── vector_store.py
+│   ├── retriever.py
+│   └── prompt.py
+│
+├── chat/
+│   ├── chat_engine.py
+│   ├── memory.py
+│   └── history.py
+│
+├── db/
+│   ├── mysql.py
+│   ├── models.py
+│   └── queries.py
+│
+├── ui/
+│   ├── login.py
+│   ├── chat_ui.py
+│   └── sidebar.py
+│
+├── config/
+│   ├── settings.py
+│   └── secrets.toml
+│
+├── data/
+│   ├── pdfs/
+│   └── vector_store/
+│
+├── requirements.txt
+└── README.md
+
+```
+
+
+
