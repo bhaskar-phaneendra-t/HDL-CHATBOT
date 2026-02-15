@@ -22,7 +22,7 @@ An AI-powered HDL (Hardware Description Language) chatbot built using Retrieval-
 
 ##  Live Demo
 
-👉 (Insert your Streamlit Cloud URL here)
+(https://hdl-chatbot-bhasphanikarindra3.streamlit.app/)
 
 ---
 
@@ -154,9 +154,3 @@ http://localhost:8501
 
 This is the part that ends up to local working chatbot
 
-# Deployement 
-
-## Step 1: Push this in to GitHub 
-create a repo in git then push these files to GitRepo.
-
-## Step 2:
