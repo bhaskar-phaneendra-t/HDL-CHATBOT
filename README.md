@@ -154,3 +154,63 @@ http://localhost:8501
 
 This is the part that ends up to local working chatbot
 
+# Deployment Guide
+
+## Deploy this in Streamlit Cloud.
+
+## Step 1:
+push this into Git repo.
+
+## Step 2:
+click on this link (https://streamlit.io/cloud)
+
+## Step 3:
+create a new app and select the repo of Git.
+
+## Step 4:
+select main file as app.py and then deploy.
+
+## Step 5:
+In deployed streamlit redirect to
+
+```nginx
+App → Settings → Secrets
+```
+## Step 6:
+Add your .env file contents here.
+
+## Step 7:
+In local file google_auth.py replace the lilnk that you produced in streamlit deployment
+
+## Step 8:
+Add this url in OAuth 2.0 Client ID also.
+
+(https://console.cloud.google.com/)
+
+```nginx
+APIs & Services → Credentials → OAuth 2.0 Client ID → Authorized Redirect URIs
+```
+
+## Step 9:
+Make sure the database Railway MySQL is not internal and public.
+
+## Step 10:
+Once reboot the deployment.
+
+#Knowledge Base
+This chatbot uses the following textbooks as its retrieval source:
+- Digital Design & Computer Architecture
+- Verilog HDL – Samir Palnitkar
+- VHDL Programming by Example
+- HDL Lecture Notes
+You can replace these with any PDF textbooks of your choice.
+
+# Security Notes
+- .env file is ignored via .gitignore
+- OAuth tokens are not hardcoded
+- Secrets are managed through Streamlit Cloud
+- MySQL credentials are never exposed in code
+- 
+
+##  Author
+**Tatapudi Bhaskar Phaneendra**
