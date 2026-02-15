@@ -1,0 +1,65 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# -------------------------
+# Virtual Environment
+# -------------------------
+projectenv/
+venv/
+env/
+.venv/
+
+# -------------------------
+# Environment Variables
+# -------------------------
+.env
+*.env
+
+# -------------------------
+# Streamlit
+# -------------------------
+.streamlit/
+
+# -------------------------
+# FAISS Vector Store (Optional)
+# Uncomment if you DON'T want to upload embeddings
+# data/vector_store/
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+notebook.ipynb
+
+# -------------------------
+# OS Files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# VS Code
+# -------------------------
+.vscode/
+
+# -------------------------
+# Cache
+# -------------------------
+.cache/
+
+
+bot.py
+bot1.py
+*.ipynb
