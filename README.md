@@ -34,8 +34,6 @@ An AI-powered HDL (Hardware Description Language) chatbot built using Retrieval-
 -  Auto chat renaming based on first question
 -  Retrieval from HDL textbooks
 -  Context-aware responses
--  Clean dark-mode UI
--  Production-ready structure
 -  Secure secret handling
 
 ---
@@ -99,7 +97,7 @@ hdl-chatbot/
 │   └── secrets.toml
 │
 ├── data/
-│   ├── pdfs/
+│   ├── pdfs/ (here pdfs should be placed)
 │   └── vector_store/
 │
 ├── requirements.txt
